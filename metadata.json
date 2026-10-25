@@ -1,0 +1,6 @@
+{
+  "name": "نبض ذكي | Smart Pulse",
+  "description": "تطبيق ويب تفاعلي وتوعوي باللغة العربية لليوم العالمي للسكري، فكرة وتطوير م. شادن فهد العنزي بالتعاون مع نادي آفاق الذكاء الرقمي كجهة المبادرة، يضم مساعداً ذكياً ومستكشف بيانات واختباراً معرفياً.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
