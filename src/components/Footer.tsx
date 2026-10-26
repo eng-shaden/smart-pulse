@@ -20,11 +20,11 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
               <span className="font-extrabold text-xl text-white">نبض ذكي | Smart Pulse</span>
             </div>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-light">
-              تطبيق توعوي وتثقيفي تفاعلي أُطلق بمناسبة <strong>اليوم العالمي للسكري (14 نوفمبر)</strong>، فكرة وتطوير <strong>م. شادن فهد العنزي</strong> بالتعاون مع <strong>«نادي آفاق الذكاء الرقمي»</strong> كجهة المبادرة، لتسخير الذكاء الاصطناعي وعلوم البيانات في تعزيز الثقافة الصحية الوقائية.
+              منصة توعوية رقمية عن السكري توظّف الذكاء الاصطناعي وتحليل البيانات لنشر الوعي الصحي، ابتكار <strong>م. شادن فهد العنزي</strong>، لتبسيط المعرفة الطبية وتمكين المجتمع بأنماط حياة صحية وقائية ومستدامة على مدار العام.
             </p>
             <div className="bg-slate-900/90 border border-slate-800 p-3 rounded-xl text-xs space-y-0.5">
-              <span className="text-teal-400 font-bold block">تصميم وتطوير: م. شادن فهد العنزي</span>
-              <span className="text-slate-400 block text-[11px]">صاحبة فكرة ومطورة النموذج الأولي لتطبيق نبض ذكي</span>
+              <span className="text-teal-400 font-bold block">ابتكار م. شادن فهد العنزي</span>
+              <span className="text-slate-400 block text-[11px]">صاحبة فكرة ومطورة منصة نبض ذكي للتوعية الرقمية</span>
             </div>
             <div className="flex items-center gap-2 text-xs text-teal-400 pt-1">
               <ShieldCheck className="w-4 h-4 text-teal-500" />
@@ -58,7 +58,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
               </li>
               <li>
                 <button onClick={() => { setActiveTab('about'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="hover:text-teal-400 transition">
-                  عن المبادرة وشبكة الشركاء
+                  عن المشروع
                 </button>
               </li>
             </ul>
@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <div>
-            فكرة وتصميم وتطوير م. شادن فهد العنزي © {new Date().getFullYear()} • بالتعاون مع نادي آفاق الذكاء الرقمي
+            منصة نبض ذكي • ابتكار وتطوير م. شادن فهد العنزي © {new Date().getFullYear()}
           </div>
           <div className="flex items-center gap-1">
             <span>صُنع بشغف لتعزيز صحة المجتمع</span>

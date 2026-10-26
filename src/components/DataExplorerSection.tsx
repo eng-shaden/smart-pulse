@@ -482,7 +482,7 @@ export const DataExplorerSection: React.FC = () => {
             <h2 className="text-2xl font-black">دور الذكاء الاصطناعي في دعم الرعاية والوقاية</h2>
           </div>
           <span className="text-xs bg-teal-500/20 text-teal-300 border border-teal-500/40 px-3 py-1.5 rounded-xl font-medium">
-            نادي آفاق الذكاء الرقمي
+            منصة نبض ذكي • علوم البيانات
           </span>
         </div>
 

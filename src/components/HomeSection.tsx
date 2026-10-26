@@ -75,16 +75,15 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ setActiveTab }) => {
         <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500/15 border border-teal-500/40 text-teal-300 text-xs sm:text-sm font-medium shadow-sm">
             <span className="w-2.5 h-2.5 rounded-full bg-teal-400 animate-ping"></span>
-            <span>بمناسبة اليوم العالمي للسكري • مبادرة نادي آفاق الذكاء الرقمي</span>
+            <span>ابتكار م. شادن فهد العنزي</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight sm:leading-tight">
             نبض ذكي <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-sky-300 to-cyan-200">| Smart Pulse</span>
           </h1>
 
-          <p className="text-slate-300 text-base sm:text-xl leading-relaxed max-w-3xl mx-auto font-light">
-            منصتكم التفاعلية باللغة العربية للارتقاء بالوعي المجتمعي حول داء السكري، 
-            وتمكين الأفراد بالمعرفة الصحية الموثوقة عبر تقنيات الذكاء الاصطناعي وعلوم البيانات الطبية.
+          <p className="text-slate-200 text-base sm:text-xl leading-relaxed max-w-3xl mx-auto font-normal">
+            منصة توعوية رقمية عن السكري توظّف الذكاء الاصطناعي وتحليل البيانات لنشر الوعي الصحي
           </p>
 
           {/* Quick Action Buttons */}
@@ -131,8 +130,8 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ setActiveTab }) => {
             <div className="text-xs text-slate-400 mt-1">يمكن الوقاية منها بنمط حياة نشط</div>
           </div>
           <div className="bg-slate-900/60 p-4 rounded-2xl border border-slate-800">
-            <div className="text-2xl sm:text-3xl font-black text-cyan-400">14 نوفمبر</div>
-            <div className="text-xs text-slate-400 mt-1">اليوم العالمي للسكري سنوياً</div>
+            <div className="text-2xl sm:text-3xl font-black text-cyan-400">توعية مستمرة</div>
+            <div className="text-xs text-slate-400 mt-1">محتوى تفاعلي على مدار العام</div>
           </div>
         </div>
       </section>
@@ -141,7 +140,7 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ setActiveTab }) => {
       <section className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6">
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <span className="text-teal-600 font-bold text-xs uppercase tracking-wider bg-teal-50 px-3 py-1 rounded-full border border-teal-100">
-            رسالة اليوم العالمي للسكري
+            رسالة التوعية الصحية المستمرة
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
             لماذا يُعد الوعي بداء السكري خط الدفاع الأول؟
@@ -403,8 +402,8 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ setActiveTab }) => {
               </div>
             </div>
 
-            <div className="text-xs text-slate-400 bg-slate-900/80 px-3 py-1.5 rounded-xl border border-slate-800">
-              مبادرة بالتعاون مع نادي آفاق الذكاء الرقمي
+            <div className="text-xs text-teal-300 bg-slate-900/80 px-3.5 py-1.5 rounded-xl border border-teal-500/30 font-medium">
+              ابتكار م. شادن فهد العنزي
             </div>
           </div>
         </div>
@@ -448,20 +447,20 @@ export const HomeSection: React.FC<HomeSectionProps> = ({ setActiveTab }) => {
             </div>
             <div>
               <div className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-0.5">
-                تصميم وتطوير
+                فكرة وتصميم وتطوير
               </div>
               <div className="text-xl sm:text-2xl font-black text-white">
-                م. شادن فهد العنزي
+                ابتكار م. شادن فهد العنزي
               </div>
               <div className="text-xs sm:text-sm text-teal-200 font-semibold mt-0.5">
-                صاحبة فكرة ومطورة النموذج الأولي لتطبيق نبض ذكي
+                صاحبة فكرة ومطورة منصة نبض ذكي للتوعية الرقمية
               </div>
             </div>
           </div>
 
           <div className="bg-slate-800/90 border border-slate-700 px-4 py-3 rounded-2xl text-xs text-slate-300 max-w-xs text-center sm:text-right">
-            <span className="text-teal-300 font-bold block mb-1">جهة المبادرة والتعاون:</span>
-            <span>نادي آفاق الذكاء الرقمي لليوم العالمي للسكري</span>
+            <span className="text-teal-300 font-bold block mb-1">منصة مستمرة ومستدامة:</span>
+            <span>توظيف الذكاء الاصطناعي وعلوم البيانات لنشر الوعي الصحي</span>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  clubProfile, 
-  worldDiabetesDayInfo, 
+  platformProfile, 
+  diabetesAwarenessInfo, 
   initialPartners 
 } from '../data/partnersData';
 import { PartnerOrg } from '../types';
@@ -14,7 +14,6 @@ import {
   PlusCircle, 
   Building2, 
   Send, 
-  ExternalLink, 
   Sparkles,
   ShieldCheck
 } from 'lucide-react';
@@ -38,7 +37,7 @@ export const AboutSection: React.FC = () => {
       id: `partner-${Date.now()}`,
       name: orgName.trim(),
       type: orgType,
-      description: orgDesc.trim() || 'شريك استراتيجي داعم لفعاليات اليوم العالمي للسكري.',
+      description: orgDesc.trim() || 'شريك استراتيجي داعم لبرامج التوعية المستمرة بالسكري.',
       status: 'confirmed',
       logoText: orgName.trim().slice(0, 15)
     };
@@ -61,22 +60,22 @@ export const AboutSection: React.FC = () => {
       <section className="bg-gradient-to-r from-slate-900 via-indigo-950 to-teal-950 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl space-y-4">
         <div className="inline-flex items-center gap-2 bg-teal-500/20 text-teal-300 text-xs px-3 py-1 rounded-full border border-teal-500/40 font-semibold">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>المسؤولية المجتمعية والتقنية</span>
+          <span>عن المشروع • منصة صحية رقمية مستقلة</span>
         </div>
         <h1 className="text-2xl sm:text-4xl font-black">
-          عن المبادرة وتطبيق نبض ذكي
+          عن منصة «نبض ذكي | Smart Pulse»
         </h1>
-        <p className="text-slate-300 text-sm sm:text-base max-w-3xl leading-relaxed">
-          مبادرة رقمية وتوعوية تجمع بين شغف هندسة الحاسب والذكاء الاصطناعي وخدمة المجتمع الصحي بمناسبة اليوم العالمي للسكري.
+        <p className="text-slate-200 text-sm sm:text-base max-w-3xl leading-relaxed font-normal">
+          منصة توعوية رقمية عن السكري توظّف الذكاء الاصطناعي وتحليل البيانات لنشر الوعي الصحي
         </p>
 
         {/* Creator highlight badge */}
         <div className="pt-2 flex flex-wrap items-center gap-3 text-xs">
-          <span className="bg-teal-500/20 text-teal-200 border border-teal-400/30 px-3 py-1.5 rounded-xl font-bold">
-            فكرة وتصميم وتطوير: م. شادن فهد العنزي
+          <span className="bg-teal-500/25 text-teal-200 border border-teal-400/40 px-3.5 py-1.5 rounded-xl font-bold">
+            ابتكار م. شادن فهد العنزي
           </span>
-          <span className="bg-slate-800 text-slate-300 border border-slate-700 px-3 py-1.5 rounded-xl">
-            جهة المبادرة والتعاون: نادي آفاق الذكاء الرقمي
+          <span className="bg-slate-800 text-slate-300 border border-slate-700 px-3.5 py-1.5 rounded-xl">
+            منصة توعوية مستمرة ومستقلة
           </span>
         </div>
       </section>
@@ -94,7 +93,7 @@ export const AboutSection: React.FC = () => {
               </div>
               <div>
                 <span className="text-xs text-teal-300 font-bold block">
-                  قصة إلهام التطبيق
+                  القصة الإنسانية وراء المشروع
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-black text-white">
                   من حكاية جدتي بدأت الفكرة
@@ -103,7 +102,7 @@ export const AboutSection: React.FC = () => {
             </div>
 
             <span className="text-xs bg-teal-950/80 text-teal-200 border border-teal-700/60 px-3 py-1 rounded-full font-medium">
-              دافع إنساني وشغف تقني
+              أثر إنساني وشغف تقني
             </span>
           </div>
 
@@ -126,19 +125,57 @@ export const AboutSection: React.FC = () => {
                 ش
               </div>
               <div>
-                <div className="text-sm font-bold text-white">م. شادن فهد العنزي</div>
-                <div className="text-xs text-teal-300">صاحبة فكرة ومطورة النموذج الأولي لتطبيق نبض ذكي</div>
+                <div className="text-sm font-bold text-white">ابتكار م. شادن فهد العنزي</div>
+                <div className="text-xs text-teal-300">صاحبة فكرة ومطورة منصة نبض ذكي</div>
               </div>
             </div>
 
-            <div className="text-xs text-slate-400">
-              بالتعاون مع نادي آفاق الذكاء الرقمي
+            <div className="text-xs text-slate-300 bg-slate-900/80 px-3 py-1.5 rounded-xl border border-slate-800">
+              منصة توعوية مستمرة ومستدامة
             </div>
           </div>
         </div>
       </section>
 
-      {/* World Diabetes Day Story & The Blue Circle */}
+      {/* About the Platform Profile & Goals */}
+      <section className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl space-y-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+          <div>
+            <span className="text-xs text-teal-400 font-bold uppercase tracking-wider block mb-1">
+              {platformProfile.creator}
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black">
+              {platformProfile.name}
+            </h2>
+            <p className="text-xs text-slate-400 mt-0.5">منصة توعوية رقمية مستمرة قابلة للتطوير المستقبلي</p>
+          </div>
+          <span className="text-xs bg-teal-500/20 text-teal-300 border border-teal-500/40 px-3 py-1.5 rounded-xl font-medium">
+            ابتكار مستقل
+          </span>
+        </div>
+
+        <div className="p-4 sm:p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 text-sm sm:text-base text-slate-200 leading-relaxed font-light">
+          {platformProfile.about}
+        </div>
+
+        {/* Platform Goals */}
+        <div className="space-y-3">
+          <h3 className="font-bold text-base text-teal-300 flex items-center gap-2">
+            <Award className="w-5 h-5" />
+            <span>أهداف منصة نبض ذكي في التوعية الصحية:</span>
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {platformProfile.goals.map((goal, idx) => (
+              <div key={idx} className="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50 flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
+                <CheckCircle2 className="w-4 h-4 text-teal-400 mt-0.5 shrink-0" />
+                <span>{goal}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Global Diabetes Symbol & Continuous Vision */}
       <section className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
         <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
           {/* Blue Circle Icon */}
@@ -147,9 +184,9 @@ export const AboutSection: React.FC = () => {
           </div>
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-              اليوم العالمي للسكري (14 نوفمبر)
+              {diabetesAwarenessInfo.title}
             </h2>
-            <p className="text-xs text-slate-500">{worldDiabetesDayInfo.theme}</p>
+            <p className="text-xs text-slate-500">نحو مجتمع واعٍ وقادر على إدارة صحته بثقة</p>
           </div>
         </div>
 
@@ -157,57 +194,21 @@ export const AboutSection: React.FC = () => {
           <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-2">
             <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-sky-500"></span>
-              <span>رمز الدائرة الزرقاء (The Blue Circle)</span>
+              <span>{diabetesAwarenessInfo.symbol}</span>
             </h3>
             <p className="text-xs sm:text-sm">
-              {worldDiabetesDayInfo.symbolMeaning}
+              {diabetesAwarenessInfo.symbolMeaning}
             </p>
           </div>
 
           <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200/80 space-y-2">
             <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
-              <span>تاريخ المناسبة العالمية</span>
+              <span>رؤية المنصة للتطوير المستقبلي</span>
             </h3>
             <p className="text-xs sm:text-sm">
-              {worldDiabetesDayInfo.history}
+              {diabetesAwarenessInfo.vision}
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Digital Horizons Club Profile */}
-      <section className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-xl space-y-6">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
-          <div>
-            <span className="text-xs text-teal-400 font-bold uppercase tracking-wider block mb-1">جهة المبادرة والتعاون</span>
-            <h2 className="text-2xl sm:text-3xl font-black">
-              {clubProfile.name}
-            </h2>
-            <p className="text-xs text-slate-400">{clubProfile.englishName}</p>
-          </div>
-          <span className="text-xs bg-teal-500/20 text-teal-300 border border-teal-500/40 px-3 py-1.5 rounded-xl font-medium">
-            شريك المبادرة المجتمعية
-          </span>
-        </div>
-
-        <div className="p-4 sm:p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 text-sm sm:text-base text-slate-200 leading-relaxed font-light">
-          {clubProfile.about}
-        </div>
-
-        {/* Club Goals */}
-        <div className="space-y-3">
-          <h3 className="font-bold text-base text-teal-300 flex items-center gap-2">
-            <Award className="w-5 h-5" />
-            <span>أهداف نادي آفاق الذكاء الرقمي في التوعية الصحية:</span>
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {clubProfile.goals.map((goal, idx) => (
-              <div key={idx} className="bg-slate-800/50 p-3.5 rounded-xl border border-slate-700/50 flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-teal-400 mt-0.5 shrink-0" />
-                <span>{goal}</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -218,13 +219,13 @@ export const AboutSection: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 text-teal-700 text-xs font-bold uppercase tracking-wider">
               <HeartHandshake className="w-4 h-4" />
-              <span>الشبكة التوعوية المتكاملة</span>
+              <span>الشبكة التوعوية التشاركية</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-slate-900 mt-1">
-              الشركاء والجهات الداعمة للمبادرة
+              الشركاء والجهات الداعمة للتوعية الصحية
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              نرحب بالتعاون مع كافة القطاعات الصحية والأكاديمية والمجتمعية لتوحيد جهود التوعية:
+              نرحب بالتعاون مع كافة القطاعات الصحية والأكاديمية والمجتمعية لنشر الوعي الصحي المستدام:
             </p>
           </div>
 
@@ -245,7 +246,7 @@ export const AboutSection: React.FC = () => {
           >
             <div className="flex items-center justify-between">
               <h3 className="font-extrabold text-sm sm:text-base text-teal-950">
-                تسجيل اهتمام بالشراكة التوعوية في اليوم العالمي للسكري
+                تسجيل اهتمام بالشراكة التوعوية مع منصة نبض ذكي
               </h3>
               <span className="text-xs text-teal-700">مساحة فورية للإضافة</span>
             </div>
@@ -298,7 +299,7 @@ export const AboutSection: React.FC = () => {
                 rows={2}
                 value={orgDesc}
                 onChange={(e) => setOrgDesc(e.target.value)}
-                placeholder="مثال: رعاية المعارض التوعوية وتقديم فحوصات سكر الدم المجانية للزوار..."
+                placeholder="مثال: رعاية المبادرات التوعوية ودعم حملات الفحص المبكر للسكر..."
                 className="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm focus:border-teal-500 focus:outline-none"
               ></textarea>
             </div>
@@ -361,16 +362,16 @@ export const AboutSection: React.FC = () => {
                 </div>
 
                 <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
-                  <span>فعاليات اليوم العالمي</span>
+                  <span>برامج التوعية المستمرة</span>
                   {isUpcoming ? (
                     <button
                       onClick={() => setShowAddPartnerForm(true)}
                       className="text-teal-600 hover:underline font-bold"
                     >
-                      احجز مكان جهتك
+                      احجز مساحة جهتك
                     </button>
                   ) : (
-                    <span className="text-teal-600 font-medium">مشارك معتمد</span>
+                    <span className="text-teal-600 font-medium">شريك معتمد</span>
                   )}
                 </div>
               </div>
@@ -388,20 +389,20 @@ export const AboutSection: React.FC = () => {
             </div>
             <div>
               <div className="text-xs font-bold text-teal-400 uppercase tracking-widest mb-0.5">
-                تصميم وتطوير
+                فكرة وتصميم وتطوير
               </div>
               <div className="text-xl sm:text-2xl font-black text-white">
-                م. شادن فهد العنزي
+                ابتكار م. شادن فهد العنزي
               </div>
               <div className="text-xs sm:text-sm text-teal-200 font-semibold mt-0.5">
-                صاحبة فكرة ومطورة النموذج الأولي لتطبيق نبض ذكي
+                صاحبة فكرة ومطورة منصة نبض ذكي للتوعية الرقمية
               </div>
             </div>
           </div>
 
           <div className="bg-slate-800/90 border border-slate-700 px-4 py-3 rounded-2xl text-xs text-slate-300 max-w-xs text-center sm:text-right">
-            <span className="text-teal-300 font-bold block mb-1">جهة المبادرة والتعاون:</span>
-            <span>نادي آفاق الذكاء الرقمي لليوم العالمي للسكري</span>
+            <span className="text-teal-300 font-bold block mb-1">منصة مستقلة ومستدامة:</span>
+            <span>جاهزة للتطوير المستمر وخدمة الصحة العامة وعلوم البيانات</span>
           </div>
         </div>
       </section>

@@ -60,8 +60,8 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
           {/* Header Logos */}
           <div className="flex items-center justify-between border-b border-teal-100 pb-4 mb-6">
             <div className="text-right">
-              <span className="text-xs font-bold text-teal-800 block">مبادرة اليوم العالمي للسكري</span>
-              <span className="text-[11px] text-slate-500">World Diabetes Day • 14 نوفمبر</span>
+              <span className="text-xs font-bold text-teal-800 block">منصة نبض ذكي للتوعية بالسكري</span>
+              <span className="text-[11px] text-slate-500">Smart Pulse Platform</span>
             </div>
 
             {/* Blue Circle Icon */}
@@ -70,8 +70,8 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
             </div>
 
             <div className="text-left">
-              <span className="text-xs font-bold text-slate-800 block">نادي آفاق الذكاء الرقمي</span>
-              <span className="text-[11px] text-teal-600 font-semibold">نبض ذكي | Smart Pulse</span>
+              <span className="text-xs font-bold text-slate-800 block">ابتكار م. شادن فهد العنزي</span>
+              <span className="text-[11px] text-teal-600 font-semibold">شهادة إنجاز معرفي</span>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
           </div>
 
           <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed mb-6 font-normal">
-            تقديراً لاجتيازه بنجاح اختبار المعرفة الشامل بداء السكري ضمن فعاليات اليوم العالمي للسكري بنسبة إنجاز بلغت{' '}
+            تقديراً لاجتيازه بنجاح اختبار المعرفة الشامل بداء السكري عبر منصة «نبض ذكي» بنسبة إنجاز بلغت{' '}
             <strong className="text-teal-700 font-bold">{percentage}%</strong> ({score} من {totalQuestions} إجابات صحيحة)،
             ومساهمته الفاعلة في تعزيز ثقافة الوقاية الصحية الرقمية.
           </p>
@@ -101,18 +101,18 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({
           {/* Signatures and Date */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t border-teal-100 text-xs">
             <div className="text-right">
-              <span className="text-slate-400 text-[10px] block">فكرة وتطوير النموذج الأولي:</span>
-              <span className="font-bold text-slate-800 block mt-0.5">م. شادن فهد العنزي</span>
-              <span className="text-[10px] text-teal-600">مصممة ومطورة نبض ذكي</span>
+              <span className="text-slate-400 text-[10px] block">الفكرة والتطوير:</span>
+              <span className="font-bold text-slate-800 block mt-0.5">ابتكار م. شادن فهد العنزي</span>
+              <span className="text-[10px] text-teal-600">مهندسة حاسب ومطورة المنصة</span>
             </div>
             <div className="text-center">
-              <span className="text-slate-400 text-[10px] block">جهة المبادرة والتعاون:</span>
-              <span className="font-bold text-slate-800 block mt-0.5">نادي آفاق الذكاء الرقمي</span>
-              <span className="text-[10px] text-teal-600">Digital Horizons Club</span>
+              <span className="text-slate-400 text-[10px] block">جهة الاعتماد:</span>
+              <span className="font-bold text-slate-800 block mt-0.5">منصة نبض ذكي</span>
+              <span className="text-[10px] text-teal-600">Smart Pulse Platform</span>
             </div>
             <div className="text-left sm:text-left">
-              <span className="text-slate-400 text-[10px] block">تاريخ الاعتماد والإصدار:</span>
-              <span className="font-bold text-slate-800 block mt-0.5">14 نوفمبر 2026</span>
+              <span className="text-slate-400 text-[10px] block">تاريخ الإنجاز:</span>
+              <span className="font-bold text-slate-800 block mt-0.5">{new Date().toLocaleDateString('ar-SA')}</span>
               <span className="text-[10px] text-teal-600">كود التحقق: SP-{Date.now().toString().slice(-6)}</span>
             </div>
           </div>

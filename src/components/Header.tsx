@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
     { id: 'assistant', label: 'المساعد الذكي', icon: Bot },
     { id: 'explorer', label: 'مستكشف البيانات', icon: BarChart3 },
     { id: 'quiz', label: 'اختبار المعرفة (10)', icon: HelpCircle },
-    { id: 'about', label: 'عن المبادرة والشركاء', icon: Info },
+    { id: 'about', label: 'عن المشروع', icon: Info },
   ];
 
   const handleNavClick = (tab: TabType) => {
@@ -37,15 +37,15 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-lg">
-      {/* Top micro bar for World Diabetes Day & Club branding */}
+      {/* Top micro bar for Continuous Platform & Innovation */}
       <div className="bg-gradient-to-r from-teal-900 via-sky-900 to-indigo-950 py-1.5 px-4 text-xs border-b border-teal-800/40">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            {/* Blue Circle of World Diabetes Day */}
+            {/* Blue Circle of Diabetes Awareness */}
             <span className="w-3.5 h-3.5 rounded-full border-2 border-sky-400 bg-sky-500/30 inline-block shadow-sm"></span>
-            <span className="font-semibold text-sky-200">اليوم العالمي للسكري • 14 نوفمبر</span>
+            <span className="font-semibold text-sky-200">منصة التوعية الرقمية بالسكري</span>
             <span className="hidden sm:inline-block text-slate-400">|</span>
-            <span className="hidden sm:inline-block text-teal-200">بالتعاون مع «نادي آفاق الذكاء الرقمي»</span>
+            <span className="hidden sm:inline-block text-teal-200 font-medium">ابتكار م. شادن فهد العنزي</span>
           </div>
 
           <div className="flex items-center gap-3 text-slate-300">
@@ -55,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
             </span>
             <span className="text-[11px] bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded-full border border-teal-500/40 flex items-center gap-1 font-medium">
               <Sparkles className="w-2.5 h-2.5" />
-              <span>توعية رقمية معتمدة</span>
+              <span>توعية رقمية مستمرة</span>
             </span>
           </div>
         </div>
@@ -90,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
                 </span>
               </div>
               <p className="text-[11px] text-slate-400 line-clamp-1">
-                فكرة وتطوير م. شادن العنزي • بالتعاون مع نادي آفاق الذكاء الرقمي
+                منصة توعوية مستمرة • ابتكار م. شادن فهد العنزي
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
 
           <div className="pt-4 border-t border-slate-800 mt-2">
             <div className="text-xs text-slate-400 text-center">
-              مبادرة نادي آفاق الذكاء الرقمي لليوم العالمي للسكري
+              منصة نبض ذكي • ابتكار م. شادن فهد العنزي
             </div>
           </div>
         </div>

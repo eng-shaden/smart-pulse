@@ -113,7 +113,7 @@ export const QuizSection: React.FC = () => {
         <div>
           <div className="inline-flex items-center gap-2 bg-teal-500/20 text-teal-300 text-xs px-3 py-1 rounded-full border border-teal-500/40 font-semibold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>اليوم العالمي للسكري • 10 أسئلة تثقيفية</span>
+            <span>منصة نبض ذكي • 10 أسئلة تثقيفية شاملة</span>
           </div>
           <h1 className="text-2xl sm:text-3xl font-black">
             اختبار المعرفة الشامل بداء السكري
@@ -307,7 +307,7 @@ export const QuizSection: React.FC = () => {
             </div>
 
             <p className="text-slate-600 text-xs sm:text-sm max-w-md mx-auto leading-relaxed">
-              شكراً لمشاركتك في رفع مستوى وعيك الصحي بمناسبة اليوم العالمي للسكري برعاية نادي آفاق الذكاء الرقمي.
+              شكراً لمشاركتك في تعزيز مستوى وعيك الصحي عبر منصة «نبض ذكي» (ابتكار م. شادن فهد العنزي).
             </p>
 
             {/* Action Buttons */}
